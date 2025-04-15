@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+header{
+    padding: 73px 0px;
+    background-color: #014E56;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.right a{
+    font-family: Livvic;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0px;
+text-decoration: none;
+color: white;
+}
+
+.right button{
+    font-family: Livvic;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0px;
+color: white;
+padding: 10px 32px;
+border: 1px solid white;
+border-radius: 30px;
+background-color: transparent;
+}
+
+.mobile-burger{
+    display: none;
+}
+
+.section-1{
+    background-color: #014E56;
+    padding-bottom: 120px;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-section h1{
+font-family: Livvic;
+font-weight: 700;
+font-size: 64px;
+line-height: 100px;
+letter-spacing: 0px;
+color: white;
+}
+
+.hero-section p{
+    font-family: Livvic;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0px;
+color: white;
+}
+
+.section-2{
+    background-color: #004047;
+}
+
+.hero-section-2 h1{
+    font-family: Livvic;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: center;
+color: white;
+padding: 70px 0px;
+}
+
+.f-box{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.child{
+    background-color: #012F34;
+    width: 350px;
+    height: 275px;
+    text-align: center;
+    padding: 24px 40px;
+}
+
+.child h3{
+    font-family: Livvic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+color: #79C8C7;   
+margin-top: 24px; 
+}
+
+.child p{
+    font-family: Livvic;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: center;
+color: white;
+}
+
+ .child button{
+    color: #012F34;
+    width: 30px;
+    height: 30px;
+    background-color: #F67E7E;
+    border-radius: 100%;
+    font-size: 30px;
+    border: none;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    position: relative;
+bottom: -45px;
+} 
+
+.section-3{
+background-color: #004047;
+}
+
+.section-3 h1{
+    color: white;
+    font-family: Livvic;
+font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: center;
+padding-top: 220px;
+
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-4{
+    background-color: #F67E7E;
+}
+
+.father{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 76px 0px;
+}
+
+.father h1{
+    font-family: Livvic;
+font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+letter-spacing: 0px;
+color: #012F34;
+}
+
+.father button{
+    font-family: Livvic;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0px;
+color: #012F34;
+padding: 10px 32px;
+border-radius: 30px;
+border: 1px solid #012F34;
+background-color: transparent;
+}
+
+footer{
+    background-color: #002529;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.first{
+    width: 100%;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width:800px){
+    .hero-section{
+        flex-direction: column;
+      text-align: center;
+    }
+
+    .f-box{
+        flex-wrap: wrap;
+       gap: 0;
+    }
+
+    .child{
+    margin-right: 10px;
+    margin-top: 50px;
+    }
+
+    .photo{
+        gap: 0;
+        flex-wrap: wrap;
+        padding: 47px 0px;
+    }
+}
+
+button:hover{
+    background-color: #002529;
+    color: white;
+}
+
+
+
+@media (max-width:550px){
+
+    .right{
+        display: none;
+    }
+
+    .mobile-burger{
+        display: block;
+    }
+
+    .f-box{
+        gap: 0;
+       
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        gap: 0;
+       flex-direction: column;
+       text-align: center;
+       padding: 47px 0px;
+    }
+
+    .photo img{
+        margin-top: 47px;
+    }
+
+    .father{
+        flex-direction: column;
+    }
+
+    .father button{
+        margin-top: 24px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    footer .first{
+        padding-top: 66px;
+    }
+
+    footer .second{
+        margin-top: 24px;
+        margin-bottom: 66px;
+    }
+}
